@@ -1,16 +1,12 @@
-
-    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-    local Window = Library.CreateLib("SG2", "Sentinel")
-
-  local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-    local Window = Library.CreateLib("SG2", "Sentinel")
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+    local Window = Library.CreateLib("Prison Life", "Sentinel")
 
     -- MAIN
     local Main = Window:NewTab("Main")
     local MainSection = Main:NewSection("Main")
-    
- MainSection:NewDropdown("Kunai Training", "Automatically Trains Kunais")
-while wait() do
+
+    MainSection:NewDropdown("Kunai Training", "Throws Kunais For You")
+        while wait() do 
 for i,v in pairs(game.Workspace:GetChildren()) do
 if v.Name == "Target" and v:FindFirstChild("owner") and v.owner.Value == game.Players.LocalPlayer.Character then
 local args = {
@@ -24,6 +20,6 @@ wait(1)
 end
 end
 end
-      
-       MainSection:NewDropdown("Pushup Training", "Does Pushups For You")
-    
+    MainSection:NewDropdown("Pushup Training", "Does Pushups For You")
+       
+       
